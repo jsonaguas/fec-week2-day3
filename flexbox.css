@@ -2,7 +2,7 @@
 .container {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: auto auto 1fr auto; 
+    grid-template-rows: auto auto 1fr auto auto; 
     min-height: 100vh;
     
 }
@@ -18,7 +18,7 @@ header {
     grid-column: 1 / -1; 
     grid-row: 1 / 2; 
     height: 10%;
-    background-image: url('beach.jpg');
+    background-image: url('images/beach.jpg');
     background-size:cover;
     color: white;
     padding: 100px;
@@ -49,7 +49,7 @@ nav a{
 }
 
 .content-wrapper {
-    grid-column: 1 / -1; 
+    grid-column: 1 / -1;
     grid-row: 3; 
     display: grid;
     grid-template-columns: 3fr 1fr; 
@@ -111,16 +111,13 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr; 
-        grid-template-rows: 1fr auto auto; 
-    }
-    .top{
-       height:200px;
-    }
+
+  
     .nav {
         grid-column: 1 / -1; 
         grid-row: 2; 
+        /* padding: 20px;
+        margin:20px; */
     }
     .nav a {
         display: block;
@@ -132,18 +129,18 @@ footer a:hover {
     }
     .main-content {
         grid-column: 1 / -1; 
-        grid-row: 3;
+        grid-row: 1;
     }
     .important-content {
         grid-column: 1 / -1; 
-        grid-row: 4;
+        grid-row: 2;
     }
     .social-media {
         grid-column: 1 / -1; 
-        grid-row: 5;
+        grid-row: 3;
     }
     .footer {
-        grid-column: 1 / -1; /* Span all columns */
-        grid-row: auto; /* Auto adjust rows */
+        grid-column: 1 / -1; 
+        grid-row: auto; 
     }
 }
